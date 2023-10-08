@@ -13,7 +13,7 @@
     />
     <link href="./css/main.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="vw-75">
     <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
       <div class="container">
         <a class="navbar-brand" href="#">Filmotopia</a>
@@ -49,17 +49,28 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row justify-content-center align-items-end">
-                  <div class="position-relative">
-                      <img src="img/Slider.png" alt="Film Kočky a psi" class="img-fluid">
-                      <div class="position-absolute start-50 translate-middle h-100 text-center">
-                          <h2 class="display-3 bg-primary p-3 text-light"><b>Kočky a psi</b></h2>
-                          <p class="text-light">Slider s nejnovějšími filmovými novinkami!</p>
-                      </div>
+                <div class="position-relative">
+                  <img
+                    src="img/Slider.png"
+                    alt="Film Kočky a psi"
+                    class="img-fluid"
+                  />
+                  <div
+                    class="position-absolute start-50 translate-middle h-100 text-center"
+                  >
+                    <h2 class="display-3 bg-primary p-3 text-light">
+                      <b>Kočky a psi</b>
+                    </h2>
+                    <p class="text-light">
+                      Slider s nejnovějšími filmovými novinkami!
+                    </p>
                   </div>
+                </div>
               </div>
-          </div>          
+            </div>
             <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="..." /> <!-- TODO: co na další slidy?-->
+              <img src="..." class="d-block w-100" alt="..." />
+              <!-- TODO: co na další slidy?-->
             </div>
             <div class="carousel-item">
               <img src="..." class="d-block w-100" alt="..." />
@@ -89,34 +100,98 @@
 
     <section class="py-2">
       <div class="container">
-        <h2 class="h1 text-left">Na co se vydat do kina</h2>
-        <div class="row">
+        <h2 class="h2 pt-2 text-left">Na co se vydat do kina</h2>
+        <div class="row row-cols-3 g-4">
           <div class="col-md-4">
-            <div class="card">
-              <img src="img/obr6.png" class="card-img-top" alt="Wall-E">
+            <div class="card h-100">
+              <img src="img/obr6.png" class="card-img-top" alt="Wall-E" />
               <div class="card-body">
                 <h5 class="card-title">Wall-E</h5>
-                <p class="card-text">Dechberoucí příběh o jednom malém robotovi, který se rozhodl zachránit svět.</p>
+                <p class="card-text">
+                  Dechberoucí příběh o jednom malém robotovi, který se rozhodl
+                  zachránit svět.
+                </p>
                 <a href="#" class="btn btn-primary">Více o filmu</a>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card">
-              <img src="img/obr1.png" class="card-img-top" alt="Hra">
+            <div class="card h-100">
+              <img src="img/obr1.png" class="card-img-top" alt="Hra" />
               <div class="card-body">
                 <h5 class="card-title">Hra</h5>
-                <p class="card-text">Jaký dar dát člověku, který má všechno? Možná strach o vlastní život, který mu změní svět.</p>
+                <p class="card-text">
+                  Jaký dar dát člověku, který má všechno? Možná strach o vlastní
+                  život, který mu změní svět.
+                </p>
                 <a href="#" class="btn btn-primary">Více o filmu</a>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card">
-              <img src="img/obr2.png" class="card-img-top" alt="Policajt ze školky">
+            <div class="card h-100">
+              <img
+                src="img/obr2.png"
+                class="card-img-top"
+                alt="Policajt ze školky"
+              />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Arnold Schwarzenegger ve své životní roli, kdo myslíte, že vyhraje?</p>
+                <h5 class="card-title">Policajt ze školky</h5>
+                <p class="card-text">
+                  Arnold Schwarzenegger ve své životní roli, kdo myslíte, že
+                  vyhraje?
+                </p>
+                <a href="#" class="btn btn-primary">Více o filmu</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img
+                src="img/obr3.png"
+                class="card-img-top"
+                alt="Policajt ze školky"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Mýval Miloš</h5>
+                <p class="card-text">
+                  Dojemný příběh o učiteli, který nevěděl kdy přestat. Nakonec
+                  našel lásku.
+                </p>
+                <a href="#" class="btn btn-primary">Více o filmu</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img
+                src="img/obr4.png"
+                class="card-img-top"
+                alt="Policajt ze školky"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Barevná smršť</h5>
+                <p class="card-text">
+                  Kdo je to grafik a proč by nás měl zajímat? Jeden student
+                  oboru grafika se vydal na cestu zla.
+                </p>
+                <a href="#" class="btn btn-primary">Více o filmu</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img
+                src="img/obr5.png"
+                class="card-img-top"
+                alt="Policajt ze školky"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Utíkej jako o život</h5>
+                <p class="card-text">
+                  Může špatný design způsobit psychickou újmu? Existuje něco
+                  jako příliš mnoho barev?
+                </p>
                 <a href="#" class="btn btn-primary">Více o filmu</a>
               </div>
             </div>
@@ -124,6 +199,160 @@
         </div>
       </div>
     </section>
+    <section class="py-2">
+      <div class="container">
+        <h2 class="pt-2 text-left">Nejnovější recenze našich kritiků</h2>
+        <div class="row">
+          <div class="col bg-success-subtle p-4 m-2">
+            <h3 class="text-center text-success py-2">KLADNÉ RECENZE</h3>
+            <div class="row">
+              <div class="col">
+                <img src="img/avatar.png" alt="rené trumpeta avatar" />
+              </div>
+              <div class="col-10">
+                <h4>René Trumpeta</h4>
+                <p>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                  scelerisque ante sollicitudin commodo. Cras purus odio,
+                  vestibulum in vulputate at, tempus viverra turpis. Fusce
+                  condimentum nunc ac nisi vulputate
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <img src="img/avatar.png" alt="rené trumpeta avatar" />
+              </div>
+              <div class="col-10">
+                <h4>René Trumpeta</h4>
+                <p>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                  scelerisque ante sollicitudin commodo. Cras purus odio,
+                  vestibulum in vulputate at, tempus viverra turpis. Fusce
+                  condimentum nunc ac nisi vulputate
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <img src="img/avatar.png" alt="rené trumpeta avatar" />
+              </div>
+              <div class="col-10">
+                <h4>René Trumpeta</h4>
+                <p>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                  scelerisque ante sollicitudin commodo. Cras purus odio,
+                  vestibulum in vulputate at, tempus viverra turpis. Fusce
+                  condimentum nunc ac nisi vulputate
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col bg-danger-subtle p-4 m-2">
+            <h3 class="text-center text-danger py-2">ZÁPORNÉ RECENZE</h3>
+            <div class="row">
+              <div class="col">
+                <img src="img/avatar.png" alt="rené trumpeta avatar" />
+              </div>
+              <div class="col-10">
+                <h4>René Trumpeta</h4>
+                <p>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                  scelerisque ante sollicitudin commodo. Cras purus odio,
+                  vestibulum in vulputate at, tempus viverra turpis. Fusce
+                  condimentum nunc ac nisi vulputate
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <img src="img/avatar.png" alt="rené trumpeta avatar" />
+              </div>
+              <div class="col-10">
+                <h4>René Trumpeta</h4>
+                <p>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                  scelerisque ante sollicitudin commodo. Cras purus odio,
+                  vestibulum in vulputate at, tempus viverra turpis. Fusce
+                  condimentum nunc ac nisi vulputate
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <img src="img/avatar.png" alt="rené trumpeta avatar" />
+              </div>
+              <div class="col-10">
+                <h4>René Trumpeta</h4>
+                <p>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                  scelerisque ante sollicitudin commodo. Cras purus odio,
+                  vestibulum in vulputate at, tempus viverra turpis. Fusce
+                  condimentum nunc ac nisi vulputate
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-2">
+      <div class="container">
+        <h2 class="pt-2 text-left">
+          Chcete se stát naším kritikem? Napište nám!
+        </h2>
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label">Vaše e-mailové adresa</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              aria-describedby="emailHelp"
+              placeholder="martinez@cupakabra.com"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="name" class="form-label">Vaše jméno</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Ricky Martin"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="text" class="form-label"
+              >Napište, proč byste se chtěl stát kritikem</label
+            >
+            <textarea class="form-control" rows="10" id="text"></textarea>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="osobni-udaje" />
+            <label class="form-check-label" for="osobni-udaje"
+              >Souhlasím se zpracováním osobních údajů</label
+            >
+          </div>
+          <button type="submit" class="btn btn-primary">Odeslat</button>
+          <!--
+          <button
+            type="button"
+            class="btn btn-lg btn-danger info-popover"
+            data-bs-toggle="popover"
+            data-bs-placement="right"
+            data-bs-trigger="manual"
+            data-bs-title="Zajímá vás něco dalšího?"
+            data-bs-content="Toto a mnohem víc se dozvíte, když kontaktujete naše oddělení pro styk s veřejností na veřejnost@filmotopie.cz"
+          >
+            Click to toggle popover
+          </button>
+          TODO: co mam sakra delat s tim popoverem?? -->
+        </form>
+      </div>
+    </section>
+    <footer class="bg-secondary text-center text-light m-5 mb-0">
+      <p class="p-3 mb-0">Tuto práci vypracoval Šimon Borovec, 2.G, 8. 10. 2023.</p>
+    </footer>
 
     <!--<script type="module" src="/main.js"></script>-->
     <script
@@ -131,5 +360,14 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const popoverTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="popover"]'
+      );
+      const popoverList = [...popoverTriggerList].map(
+        (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+      );
+      document.getElementById('info-popover').popover('show');
+    </script>
   </body>
 </html>
