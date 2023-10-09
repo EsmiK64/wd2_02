@@ -34,10 +34,12 @@
               <a class="nav-link active" aria-current="page" href="#">Domů</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Tip na film</a>
+              <a class="nav-link" href="#filmy" data-bs-smoothScroll="true"
+                >Tip na film</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Redakce</a>
+              <a class="nav-link" href="#recenze">Redakce</a>
             </li>
           </ul>
         </div>
@@ -48,24 +50,20 @@
         <div id="carouselExample" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="row justify-content-center align-items-end">
-                <div class="position-relative">
-                  <img
-                    src="img/Slider.png"
-                    alt="Film Kočky a psi"
-                    class="img-fluid"
-                  />
-                  <div
-                    class="position-absolute start-50 translate-middle h-100 text-center"
-                  >
-                    <h2 class="display-3 bg-primary p-2 text-light p-lg-3">
-                      <b>Kočky a psi</b>
-                    </h2>
-                    <p class="text-light">
-                      Slider s nejnovějšími filmovými novinkami!
-                    </p>
-                  </div>
-                </div>
+              <img
+                src="img/Slider.png"
+                alt="Film Kočky a psi"
+                class="img-fluid"
+              />
+              <div class="carousel-caption text-center">
+                <h2
+                  class="display-3 bg-primary p-3 text-light d-inline-block fw-bold"
+                >
+                  Kočky a psi
+                </h2>
+                <p class="text-light">
+                  Slider s nejnovějšími filmovými novinkami!
+                </p>
               </div>
             </div>
             <div class="carousel-item">
@@ -98,11 +96,11 @@
       </div>
     </section>
 
-    <section class="py-2">
+    <section class="py-2" id="filmy" data-bs-spy="scroll">
       <div class="container">
         <h2 class="h2 pt-2 text-left">Na co se vydat do kina</h2>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-          <div class="">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4">
+          <div class="col">
             <div class="card h-100">
               <img src="img/obr6.png" class="card-img-top" alt="Wall-E" />
               <div class="card-body">
@@ -115,7 +113,7 @@
               </div>
             </div>
           </div>
-          <div class="">
+          <div class="col">
             <div class="card h-100">
               <img src="img/obr1.png" class="card-img-top" alt="Hra" />
               <div class="card-body">
@@ -128,7 +126,7 @@
               </div>
             </div>
           </div>
-          <div class="">
+          <div class="col">
             <div class="card h-100">
               <img
                 src="img/obr2.png"
@@ -145,7 +143,7 @@
               </div>
             </div>
           </div>
-          <div class="">
+          <div class="col">
             <div class="card h-100">
               <img
                 src="img/obr3.png"
@@ -162,7 +160,7 @@
               </div>
             </div>
           </div>
-          <div class="">
+          <div class="col">
             <div class="card h-100">
               <img
                 src="img/obr4.png"
@@ -179,7 +177,7 @@
               </div>
             </div>
           </div>
-          <div class="">
+          <div class="col">
             <div class="card h-100">
               <img
                 src="img/obr5.png"
@@ -199,97 +197,101 @@
         </div>
       </div>
     </section>
-    <section class="py-2">
+    <section class="py-2" id="recenze" data-bs-spy="scroll">
       <div class="container">
         <h2 class="pt-2 text-left">Nejnovější recenze našich kritiků</h2>
         <div class="row row-cols-1 row-cols-lg-2 g-4">
-          <div class="col bg-success-subtle p-4">
-            <h3 class="text-center text-success py-2">KLADNÉ RECENZE</h3>
-            <div class="row">
-              <div class="col d-none d-md-block">
-                <img src="img/avatar.png" alt="rené trumpeta avatar" />
+          <div class="col">
+            <div class="bg-success-subtle p-4">
+              <h3 class="text-center text-success py-2">KLADNÉ RECENZE</h3>
+              <div class="row">
+                <div class="col d-none d-md-block">
+                  <img src="img/avatar.png" alt="rené trumpeta avatar" />
+                </div>
+                <div class="col col-md-10">
+                  <h4>René Trumpeta</h4>
+                  <p>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                    scelerisque ante sollicitudin commodo. Cras purus odio,
+                    vestibulum in vulputate at, tempus viverra turpis. Fusce
+                    condimentum nunc ac nisi vulputate
+                  </p>
+                </div>
               </div>
-              <div class="col-10">
-                <h4>René Trumpeta</h4>
-                <p>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                  scelerisque ante sollicitudin commodo. Cras purus odio,
-                  vestibulum in vulputate at, tempus viverra turpis. Fusce
-                  condimentum nunc ac nisi vulputate
-                </p>
+              <div class="row">
+                <div class="col d-none d-md-block">
+                  <img src="img/avatar.png" alt="rené trumpeta avatar" />
+                </div>
+                <div class="col col-md-10">
+                  <h4>René Trumpeta</h4>
+                  <p>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                    scelerisque ante sollicitudin commodo. Cras purus odio,
+                    vestibulum in vulputate at, tempus viverra turpis. Fusce
+                    condimentum nunc ac nisi vulputate
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col d-none d-md-block">
-                <img src="img/avatar.png" alt="rené trumpeta avatar" />
-              </div>
-              <div class="col-10">
-                <h4>René Trumpeta</h4>
-                <p>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                  scelerisque ante sollicitudin commodo. Cras purus odio,
-                  vestibulum in vulputate at, tempus viverra turpis. Fusce
-                  condimentum nunc ac nisi vulputate
-                </p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col d-none d-md-block">
-                <img src="img/avatar.png" alt="rené trumpeta avatar" />
-              </div>
-              <div class="col-10">
-                <h4>René Trumpeta</h4>
-                <p>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                  scelerisque ante sollicitudin commodo. Cras purus odio,
-                  vestibulum in vulputate at, tempus viverra turpis. Fusce
-                  condimentum nunc ac nisi vulputate
-                </p>
+              <div class="row">
+                <div class="col d-none d-md-block">
+                  <img src="img/avatar.png" alt="rené trumpeta avatar" />
+                </div>
+                <div class="col col-md-10">
+                  <h4>René Trumpeta</h4>
+                  <p>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                    scelerisque ante sollicitudin commodo. Cras purus odio,
+                    vestibulum in vulputate at, tempus viverra turpis. Fusce
+                    condimentum nunc ac nisi vulputate
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col bg-danger-subtle p-4">
-            <h3 class="text-center text-danger py-2">ZÁPORNÉ RECENZE</h3>
-            <div class="row">
-              <div class="col d-none d-md-block">
-                <img src="img/avatar.png" alt="rené trumpeta avatar" />
+          <div class="col">
+            <div class="bg-danger-subtle p-4">
+              <h3 class="text-center text-danger py-2">ZÁPORNÉ RECENZE</h3>
+              <div class="row">
+                <div class="col d-none d-md-block">
+                  <img src="img/avatar.png" alt="rené trumpeta avatar" />
+                </div>
+                <div class="col col-md-10">
+                  <h4>René Trumpeta</h4>
+                  <p>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                    scelerisque ante sollicitudin commodo. Cras purus odio,
+                    vestibulum in vulputate at, tempus viverra turpis. Fusce
+                    condimentum nunc ac nisi vulputate
+                  </p>
+                </div>
               </div>
-              <div class="col-10">
-                <h4>René Trumpeta</h4>
-                <p>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                  scelerisque ante sollicitudin commodo. Cras purus odio,
-                  vestibulum in vulputate at, tempus viverra turpis. Fusce
-                  condimentum nunc ac nisi vulputate
-                </p>
+              <div class="row">
+                <div class="col d-none d-md-block">
+                  <img src="img/avatar.png" alt="rené trumpeta avatar" />
+                </div>
+                <div class="col col-md-10">
+                  <h4>René Trumpeta</h4>
+                  <p>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                    scelerisque ante sollicitudin commodo. Cras purus odio,
+                    vestibulum in vulputate at, tempus viverra turpis. Fusce
+                    condimentum nunc ac nisi vulputate
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col d-none d-md-block">
-                <img src="img/avatar.png" alt="rené trumpeta avatar" />
-              </div>
-              <div class="col-10">
-                <h4>René Trumpeta</h4>
-                <p>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                  scelerisque ante sollicitudin commodo. Cras purus odio,
-                  vestibulum in vulputate at, tempus viverra turpis. Fusce
-                  condimentum nunc ac nisi vulputate
-                </p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col d-none d-md-block">
-                <img src="img/avatar.png" alt="rené trumpeta avatar" />
-              </div>
-              <div class="col-10">
-                <h4>René Trumpeta</h4>
-                <p>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                  scelerisque ante sollicitudin commodo. Cras purus odio,
-                  vestibulum in vulputate at, tempus viverra turpis. Fusce
-                  condimentum nunc ac nisi vulputate
-                </p>
+              <div class="row">
+                <div class="col d-none d-md-block">
+                  <img src="img/avatar.png" alt="rené trumpeta avatar" />
+                </div>
+                <div class="col col-md-10">
+                  <h4>René Trumpeta</h4>
+                  <p>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                    scelerisque ante sollicitudin commodo. Cras purus odio,
+                    vestibulum in vulputate at, tempus viverra turpis. Fusce
+                    condimentum nunc ac nisi vulputate
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -298,61 +300,71 @@
     </section>
     <section class="py-2">
       <div class="container">
-        <h2 class="pt-2 text-left">
-          Chcete se stát naším kritikem? Napište nám!
-        </h2>
-        <form>
-          <div class="mb-3 w-100 w-lg-50"> <!-- TODO: proc tohle nefunguje? -->
-            <label for="email" class="form-label">Vaše e-mailové adresa</label>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              aria-describedby="emailHelp"
-              placeholder="martinez@cupakabra.com"
-            />
+        <div class="row">
+          <div class="col">
+            <h2 class="pt-2 text-left">
+              Chcete se stát naším kritikem? Napište nám!
+            </h2>
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label"
+                  >Vaše e-mailové adresa</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="emailHelp"
+                  placeholder="martinez@cupakabra.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="name" class="form-label">Vaše jméno</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Ricky Martin"
+                  data-bs-toggle="popover"
+                  data-bs-placement="right"
+                  data-bs-trigger="focus"
+                  data-bs-title="Zajímá vás něco dalšího?"
+                  data-bs-content="Toto a mnohem víc se dozvíte, když kontaktujete naše oddělení pro styk s veřejností na veřejnost@filmotopie.cz"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="text" class="form-label"
+                  >Napište, proč byste se chtěl stát kritikem</label
+                >
+                <textarea class="form-control" rows="10" id="text"></textarea>
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="osobni-udaje"
+                />
+                <label class="form-check-label" for="osobni-udaje"
+                  >Souhlasím se zpracováním osobních údajů</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary">Odeslat</button>
+            </form>
           </div>
-          <div class="mb-3">
-            <label for="name" class="form-label">Vaše jméno</label>
-            <input
-              type="text"
-              class="form-control"
-              id="name"
-              placeholder="Ricky Martin"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="text" class="form-label"
-              >Napište, proč byste se chtěl stát kritikem</label
-            >
-            <textarea class="form-control" rows="10" id="text"></textarea>
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="osobni-udaje" />
-            <label class="form-check-label" for="osobni-udaje"
-              >Souhlasím se zpracováním osobních údajů</label
-            >
-          </div>
-          <button type="submit" class="btn btn-primary">Odeslat</button>
-          <!--
-          <button
-            type="button"
-            class="btn btn-lg btn-danger info-popover"
-            data-bs-toggle="popover"
-            data-bs-placement="right"
-            data-bs-trigger="manual"
-            data-bs-title="Zajímá vás něco dalšího?"
-            data-bs-content="Toto a mnohem víc se dozvíte, když kontaktujete naše oddělení pro styk s veřejností na veřejnost@filmotopie.cz"
-          >
-            Click to toggle popover
-          </button>
-          TODO: co mam sakra delat s tim popoverem?? -->
-        </form>
+          <div class="col d-none d-md-block"></div>
+        </div>
       </div>
     </section>
-    <footer class="bg-secondary text-center text-light">
-      <p class="p-3 mb-0 text-light">Tuto práci vypracoval Šimon Borovec<span class="d-none d-md-inline-block">, 2.G, 8. 10. 2023.</span></p>
-    </footer>
+    <div class="container">
+      <footer class="bg-secondary text-center text-light">
+        <p class="p-3 mb-0 text-light">
+          Tuto práci vypracoval Šimon Borovec<span
+            class="d-none d-md-inline-block"
+            >, 2.G, 8. 10. 2023.</span
+          >
+        </p>
+      </footer>
+    </div>
 
     <!--<script type="module" src="/main.js"></script>-->
     <script
@@ -367,7 +379,6 @@
       const popoverList = [...popoverTriggerList].map(
         (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
       );
-      document.getElementById('info-popover').popover('show');
     </script>
   </body>
 </html>
