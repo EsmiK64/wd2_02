@@ -68,7 +68,6 @@
             </div>
             <div class="carousel-item">
               <img src="..." class="d-block w-100" alt="..." />
-              <!-- TODO: co na další slidy?-->
             </div>
             <div class="carousel-item">
               <img src="..." class="d-block w-100" alt="..." />
@@ -306,31 +305,34 @@
               Chcete se stát naším kritikem? Napište nám!
             </h2>
             <form>
-              <div class="mb-3">
-                <label for="email" class="form-label"
-                  >Vaše e-mailové adresa</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  aria-describedby="emailHelp"
-                  placeholder="martinez@cupakabra.com"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="name" class="form-label">Vaše jméno</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Ricky Martin"
-                  data-bs-toggle="popover"
-                  data-bs-placement="right"
-                  data-bs-trigger="focus"
-                  data-bs-title="Zajímá vás něco dalšího?"
-                  data-bs-content="Toto a mnohem víc se dozvíte, když kontaktujete naše oddělení pro styk s veřejností na veřejnost@filmotopie.cz"
-                />
+              <div
+                data-bs-toggle="popover"
+                data-bs-placement="right"
+                data-bs-trigger="focus"
+                data-bs-title="Zajímá vás něco dalšího?"
+                data-bs-content="Toto a mnohem víc se dozvíte, když kontaktujete naše oddělení pro styk s veřejností na veřejnost@filmotopie.cz"
+              >
+                <div class="mb-3">
+                  <label for="email" class="form-label"
+                    >Vaše e-mailové adresa</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    aria-describedby="emailHelp"
+                    placeholder="martinez@cupakabra.com"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Vaše jméno</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Ricky Martin"
+                  />
+                </div>
               </div>
               <div class="mb-3">
                 <label for="text" class="form-label"
